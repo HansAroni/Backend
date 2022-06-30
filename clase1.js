@@ -1,5 +1,5 @@
 
-//Class constructor del libro
+// Class constructor del libro
 
 class Book {
     constructor(name, autor){
