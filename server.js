@@ -6,7 +6,7 @@ const PORT = 8080;
 const data = new Contenedor('Productos');
 
 app.get('/', async (req, res) =>{
-  res.send('Bienvenido! Prueba https://nodeserverjg.glitch.me/productos o https://nodeserverjg.glitch.me/productoRandom');
+  res.send('Bienvenido! Prueba https://hansaronibackend.glitch.me/ o https://glitch.com/edit/#!/hansaronibackend');
 })
 
 app.get('/productos', async (req, res) =>{
