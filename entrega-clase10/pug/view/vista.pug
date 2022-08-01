@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous")
+        
+    body 
+     
+        if productos.length
+            table(class="container")
+                tr 
+                    th Nombre
+                    th Precio 
+                    th URL 
+                
+                    each item  in productos 
+                        tr
+                            td=item.nombre 
+                            td=item.precio 
+                            td
+                                img( width="50" src=item.url)
+            a(href='/' class="btn btn-danger m-2")='Volver a cargar producto'
+           
+        else 
+             h2 No hay productos en la lista
+        

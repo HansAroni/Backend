@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <%- include('../partials/head') -%>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <%- include('../style/vista')-%>
+            <% if(productos.length> 0) {%>
+
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>URL</th>
+                    </tr>
+
+                    <% productos.map(function (item) { %>
+                        <tr>
+                            <td>
+                                <%= item.nombre %>
+
+                            </td>
+                            <td>
+                                <%= item.precio %>
+                            </td>
+                            <td>
+                                <img class='imgProducto' src='<%= item.url %>' />
+                            </td>
+                        </tr>
+                        <% }) %>
+                </table>
+
+                <% } else { %>
+                    <h2>No hay productos</h2>
+                    <a href="/" class="btn btn-primary m-2">Volver a cargar productos</a>
+                    <% } %>
+
+
+    </div>
+
+</body>
+
+</html>

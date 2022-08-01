@@ -1,0 +1,26 @@
+<div>
+  <h2>Vista de productos</h2>
+  <br>
+</div>
+{{#if productos }}
+<div class="table-responsive">
+  <table class="table table-dark">
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Url</th>
+    </tr>
+    {{#each productos}}
+    <tr>
+      <td>{{this.nombre}}</td>
+      <td>${{this.precio}}</td>
+      <td><img width="50" src={{this.url}} alt="not found"></td>
+    </tr>
+    {{/each}}
+  </table>
+</div>
+{{else}}
+<h3 class="alert alert-warning">No se encontraron productos</h3>
+{{/if}}
+<br>
+<a href="/" type="button" class="btn btn-primary">Cargar un nuevo producto</a>
