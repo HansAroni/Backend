@@ -32,16 +32,6 @@ app.post('/productos', async (req, res) =>{
     res.redirect('/')
 })
 
-// app.get('/productos', (req, res) => {
-//     const { nivel, min, max } = req.query
-//     res.render('desafio1', {
-//         titulo: '  MEDIDOR',
-//         nivel: nivel,
-//         min: min,
-//         max: max
-//     })
-// })
-
 const server = app.listen(PORT, () => {
     console.log(`Servidor  escuchando en el puerto ${PORT}`)
 })
