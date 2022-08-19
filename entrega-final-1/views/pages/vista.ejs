@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <%- include('../partials/head') -%>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <%- include('../style/vista')-%>
+            <% if(productos.length> 0) {%>
+
+                <h1> Productos</h1>
+
+                    <% productos.map(function (item) { %>
+                        <div class="card" style="width: 18rem;">
+                            <img src='<%= item.url %>' class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title"><%= item.nombre %></h5>
+                              <p class="card-text"><%= item.precio %>.</p>
+                              <% if(administrador) { %>
+                                <a href="#" onclick="asd()" class="btn btn-primary" >Editar</a>
+                                <a href="#" class="btn btn-primary">Actualizar</a>
+                                <% } %>
+                            </div>
+                          </div>
+                       
+                        <% }) %>
+               
+
+                <% } else { %>
+                    <h2>No hay productos</h2>
+                    <a href="/" class="btn btn-primary m-2">Volver a cargar productos</a>
+                    <% } %>
+
+
+    </div>
+    <%- include('../js/main') -%>
+</body>
+
+</html>
