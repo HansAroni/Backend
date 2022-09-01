@@ -4,7 +4,7 @@ const DATABASE_HOST = process.env.DATABASE_HOST || "localhost";
 const DATABASE_PORT = process.env.DATABASE_PORT || "3306";
 const DATABASE_USER = process.env.DATABASE_USER || "root";
 const DATABASE_PASSWORD = process.env.DATABASE_PASSWORD || "root_password";
-const DATABASE_NAME = process.env.DATABASE_NAME || "plataforma_db"
+const DATABASE_NAME = process.env.DATABASE_NAME || "productos"
 
 const knexConfig = {
     client: 'mysql',
@@ -29,4 +29,7 @@ const knexConfig = {
 module.exports = knexConfig
 
 
-
+// {id: 1, nombre: 'coca', precio: 250},
+//     {id: 2,  nombre: 'agua', precio: 250}
+//     {id: 1, nombre: 'agustin', mensaje:"hola"},
+//     {id: 2,  nombre: 'agustin', mensaje:"chau"}
