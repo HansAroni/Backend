@@ -1,12 +1,15 @@
 const express = require('express');
 const app = express();
-const productosRouter = require('./routes/productos');
+const routerProductos = require('./routes/productos');
 const { Server: HTTPserver } = require("http");
 const { Server: IOServer } = require("socket.io");
 const PORT = 8080;
+const Contenedor = require('./utils/Contenedor');
+const db = './utils/items.json'
+const mensajes = new Contenedor('./utils/Contenedor.js')
+const productos = new Contenedor(db)
 
-
-app.use('/productos', productosRouter)
+app.use('/productos', routerProductos)
 const httpServer = new HTTPserver(app);
 const socketServer = new IOServer(httpServer)
 app.use(express.static('public'));
@@ -62,5 +65,3 @@ httpServer.listen(PORT, () => {
     console.log(`Servidor  escuchando en el puerto ${PORT}`)
 })
 httpServer.on("error", error => console.log(`Error en servidor ${error}`))
-
-

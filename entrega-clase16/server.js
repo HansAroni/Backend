@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
-const productosRouter = require('./routes/productos');
+const routerProductos = require('./routes/productos');
 const { Server: HTTPserver } = require("http");
 const { Server: IOServer } = require("socket.io");
 const PORT = 8080;
 
 
-app.use('/productos', productosRouter)
+app.use('/productos', routerProductos)
 const httpServer = new HTTPserver(app);
 const socketServer = new IOServer(httpServer)
 app.use(express.static('public'));
