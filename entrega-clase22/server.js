@@ -1,10 +1,10 @@
 const express = require("express")
 const {Server: HTTPServer} = require("http")
 const {Server: SocketServer} = require("socket.io")
-const {generateDataProducts} = require('./utils/fakeDataGenerator.js')
-const {MensajesDAO, UsersDAO} = require('./daos/daos.js')
-const {normalizeMensajes, denormalizeMensajes} = require('./utils/normalize.js')
-const {print} = require('./utils/utils.js')
+const {generateDataProducts} = require('./src/utils/fakeDataGenerator.js')
+const {MensajesDAO, UsersDAO} = require('./src/daos/daos.js')
+const {normalizeMensajes, denormalizeMensajes} = require('./src/utils/normalize.js')
+const {print} = require('./src/utils/utils.js')
 
 
 // EXPRESS
