@@ -21,7 +21,7 @@ app.use('/static', express.static('public'))
 
 app.use(session({
     store: new MongoStore({
-        mongoUrl: uriStringMongo,
+        mongoUrl: 'mongodb://localhost:27017/sessions',
         ttl: 60 * 10,
         retries: 0
     }),
