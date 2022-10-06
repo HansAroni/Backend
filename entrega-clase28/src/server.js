@@ -1,7 +1,17 @@
 const {generateDataProducts} = require('./utils/fakeDataGenerator.js')
 const { isLogged } = require('./utils/middlewares.js')
 const controllers = require('./controllers.js')
+const parseArgs = require ('minimist');
 
+const opciones = {
+    alias: {
+        m: "modo",
+        p: "puerto",
+        d: "debug"
+    }
+}
+const objeto = parseArgs(process.argv.slice(2), opciones);
+console.log(objeto);
 const express = require("express")
 const {Server: HTTPServer} = require("http")
 
