@@ -21,7 +21,6 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "start": "node server.js",
     "dev": "nodemon ./src/main.js"
   },
   "name": "ejercicio1",
