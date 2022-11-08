@@ -21,7 +21,7 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "dev": "nodemon ./src/main.js"
+    "start": "nodemon ./src/main.js"
   },
   "name": "ejercicio1",
   "version": "1.0.0",
