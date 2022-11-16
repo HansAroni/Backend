@@ -1,0 +1,29 @@
+{"level":"warn","message":"Usuario o contraseña incorrecta"}
+{"level":"warn","message":"Usuario o contraseña incorrecta"}
+{"level":"warn","message":"Usuario o contraseña incorrecta"}
+{"level":"warn","message":"Usuario o contraseña incorrecta"}
+{"level":"warn","message":"Usuario existente"}
+{"level":"warn","message":"Usuario existente"}
+{"level":"warn","message":"Usuario existente"}
+{"level":"warn","message":"Usuario existente"}
+{"level":"warn","message":"Usuario existente"}
+{"level":"warn","message":"Usuario existente"}
+{"level":"warn","message":"Usuario no encontrado o password invalido"}
+{"level":"warn","message":"Usuario existente"}
+{"code":"EAUTH","command":"API","level":"error"}
+{"code":"EAUTH","command":"API","level":"error"}
+{"code":"EAUTH","command":"API","level":"error"}
+{"code":63007,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/63007","status":400}
+{"code":21211,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"code":21211,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"code":21211,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"code":21211,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"code":21211,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"code":21211,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"code":21211,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"code":21608,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21608","status":400}
+{"code":21211,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"code":21211,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"code":21608,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21608","status":400}
+{"code":21608,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21608","status":400}
+{"code":21608,"level":"error","moreInfo":"https://www.twilio.com/docs/errors/21608","status":400}
